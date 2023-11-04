@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--main template css file--->
+    <link rel="stylesheet" href="Css/Kasper.css" />
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;700&family=Work+Sans:wght@200;300;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kasper | Template Two</title>
+  </head>
+  <body>
+    <!-- start header -->
+    <header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="Recordes/Images/logo.png" alt="Logo" />
+        </a>
+        <nav>
+          <i class="fas fa-bars toggle-menu"></i>
+          <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="form">
+            <i class="fas fa-search"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- start landing -->
+    <div class="landing">
+      <div class="overlay">
+        <div class="landing-sentences">
+          <p class="first-child">
+            HELLO WORLD! <br />
+            WE ARE KASPER,WE MAKE ART.
+          </p>
+          <br />
+          <p class="last-child">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+            beatae ad minima molestiae ipsa iure doloribus ipsam voluptate.
+          </p>
+        </div>
+      </div>
+      <i class="fa-solid fa-angle-left"></i>
+      <i class="fa-solid fa-angle-right"></i>
+      <div class="dots">
+        <i class="fa-regular fa-circle"></i>
+        <i class="fa-regular fa-circle active"></i>
+        <i class="fa-regular fa-circle"></i>
+      </div>
+    </div>
+    <!-- end landing -->
+    <!-- start services -->
+    <div class="services" id="services">
+      <div class="container">
+        <div class="main-heading">
+          <h2>Services</h2>
+          <p>
+            i don't no what i should write but i will right anything anyway bla
+            bla bla bla i think thats ok
+          </p>
+        </div>
+        <div class="services-container">
+          <div class="srv-box">
+            <i class="fa-solid fa-tv"></i>
+            <div class="text">
+              <h3>Vorem amet intuitive</h3>
+              <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinara.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+          <div class="srv-box">
+            <i class="fa-solid fa-gear"></i>
+            <div class="text">
+              <h3>Vorem amet intuitive</h3>
+              <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinara.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+          <div class="srv-box">
+            <i class="fa-solid fa-pen-ruler"></i>
+            <div class="text">
+              <h3>Vorem amet intuitive</h3>
+              <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinara.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+          <div class="srv-box">
+            <i class="fa-solid fa-camera"></i>
+            <div class="text">
+              <h3>Vorem amet intuitive</h3>
+              <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinara.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end services -->
+    <!-- start design -->
+    <div class="design">
+      <div class="design-page">
+        <div class="over-sentences">
+          <h2>Our Design Come With...</h2>
+          <ul>
+            <li><i class="fa-solid fa-tv"></i>Responsive Design</li>
+            <li><i class="fa-solid fa-tv"></i>Modern And Clean Design</li>
+            <li><i class="fa-solid fa-tv"></i>Clean Code</li>
+            <li><i class="fa-solid fa-tv"></i>Browser Freindly</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end design -->
+    <!-- start Portfolio -->
+    <div class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="main-heading">
+          <h2>Portfolio</h2>
+          <p>
+            i don't no what i should write but i will right anything anyway bla
+            bla bla bla i think thats ok
+          </p>
+        </div>
+        <div class="container">
+          <div class="bottons">
+            <div class="all">ALL</div>
+            <div class="app">APP</div>
+            <div class="photograpghy">PHOTOGRAPHY</div>
+            <div class="web">WEB</div>
+            <div class="print">PRINT</div>
+          </div>
+        </div>
+        <div class="imgs-container">
+          <div class="box">
+            <img src="Recordes/Images/Devices (1).jpg" alt="" />
+            <div class="caption">
+              <h4>Awesome Image</h4>
+              <p>Photography</p>
+            </div>
+          </div>
+          <div class="box">
+            <img src="Recordes/Images/Devices (1).jpg" alt="" />
+            <div class="caption">
+              <h4>Awesome Image</h4>
+              <p>Photography</p>
+            </div>
+          </div>
+          <div class="box">
+            <img src="Recordes/Images/Devices (1).jpg" alt="" />
+            <div class="caption">
+              <h4>Awesome Image</h4>
+              <p>Photography</p>
+            </div>
+          </div>
+          <div class="box">
+            <img src="Recordes/Images/Devices (1).jpg" alt="" />
+            <div class="caption">
+              <h4>Awesome Image</h4>
+              <p>Photography</p>
+            </div>
+          </div>
+          <div class="box">
+            <img src="Recordes/Images/Devices (1).jpg" alt="" />
+            <div class="caption">
+              <h4>Awesome Image</h4>
+              <p>Photography</p>
+            </div>
+          </div>
+          <div class="box">
+            <img src="Recordes/Images/Devices (1).jpg" alt="" />
+            <div class="caption">
+              <h4>Awesome Image</h4>
+              <p>Photography</p>
+            </div>
+          </div>
+          <div class="box">
+            <img src="Recordes/Images/Devices (1).jpg" alt="" />
+            <div class="caption">
+              <h4>Awesome Image</h4>
+              <p>Photography</p>
+            </div>
+          </div>
+          <div class="box">
+            <img src="Recordes/Images/Devices (1).jpg" alt="" />
+            <div class="caption">
+              <h4>Awesome Image</h4>
+              <p>Photography</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="more">More</div>
+    </div>
+    <!-- end Portfolio -->
+    <!-- start video -->
+    <div class="video">
+      <div class="over-video">
+        <div class="video-lay">
+          <h1>SUPPER AWESOME VIDEO HERE</h1>
+          <p>Its All You Need</p>
+          <div class="seemore">See More</div>
+        </div>
+      </div>
+    </div>
+    <!-- end video -->
+    <!-- start About -->
+    <div class="about" id="about">
+      <div class="container">
+        <div class="main-heading">
+          <h2>About</h2>
+          <p>
+            i don't no what i should write but i will right anything anyway bla
+            bla bla bla i think thats ok
+          </p>
+        </div>
+      </div>
+      <div class="anelyses">
+        <div class="over-about">
+          <div class="box-about">
+            <i class="fa-solid fa-mug-hot"></i>
+            <h1>1,263</h1>
+            <p>Coffe Drinks</p>
+          </div>
+          <div class="box-about">
+            <i class="fa-solid fa-folder-closed"></i>
+            <h1>256</h1>
+            <p>Computer Projects</p>
+          </div>
+          <div class="box-about">
+            <i class="fa-solid fa-file"></i>
+            <h1>1,473</h1>
+            <p>Mail Sent</p>
+          </div>
+          <div class="box-about">
+            <i class="fa-solid fa-trophy"></i>
+            <h1>17</h1>
+            <p>Awards Recived</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end About -->
+    <!-- start skills -->
+    <div class="skills">
+      <div class="container">
+        <div class="sentences">
+          <div class="sentences-1">
+            <h3>TESTIMONIALS</h3>
+            <p>
+              i don't no what i should write but i will right anything anyway
+              <br />
+              bla bla bla i think thats ok
+            </p>
+          </div>
+          <div class="sentences-2">
+            <h3>OUR SKILLS</h3>
+            <p>
+              i don't no what i should write but i will right anything anyway
+              <br />
+              bla bla bla i think thats ok
+            </p>
+          </div>
+        </div>
+        <div class="parent-box">
+          <div class="child-box">
+            <p class="pp1">
+              i don't no what i should write but i will right anything anyway
+              bla bla bla i think thats ok
+            </p>
+            <p class="pp2">
+              i don't no what i should write but i will right anything anyway
+              bla bla bla i think thats ok
+            </p>
+            <div class="dots">
+              <i class="fa-regular fa-circle"></i>
+              <i class="fa-regular fa-circle active"></i>
+              <i class="fa-regular fa-circle"></i>
+            </div>
+          </div>
+          <div class="child-box">
+            <p>Adobe</p>
+            <div class="adobe">
+              <div class="adobe1"></div>
+            </div>
+            <p>Html & Css</p>
+            <div class="html"><div class="html1"></div></div>
+            <p>Javascript</p>
+            <div class="javascript"><div class="java1"></div></div>
+            <p>Php</p>
+            <div class="php"><div class="php1"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end skills -->
+    <!-- start qoute -->
+    <div class="qoute">
+      <div class="senten">
+        <h1>
+          "i don't no what i should write but i will right anything anyway bla
+          bla bla i think thats ok"
+        </h1>
+        <p>John Doe</p>
+      </div>
+    </div>
+    <!-- end qoute -->
+    <!-- start pricing -->
+    <div class="pricing" id="pricing">
+      <div class="container">
+        <div class="main-heading">
+          <h2>Pricing</h2>
+          <p>
+            i don't no what i should write but i will right anything anyway bla
+            bla bla bla i think thats ok
+          </p>
+        </div>
+        <div class="price-box">
+          <div class="price">
+            <p>BASIC</p>
+            <h1>19</h1>
+            <p>Feature NO 1</p>
+            <p>Extra Feature</p>
+            <p>Feature NO 2</p>
+            <p class="Future">Feature</p>
+            <p>Buy Now</p>
+          </div>
+          <div class="price">
+            <p>PREMIUM</p>
+            <h1>29</h1>
+            <p>Feature NO 1</p>
+            <p>Extra Feature</p>
+            <p>Feature NO 2</p>
+            <p class="Future">Feature</p>
+            <p>Buy Now</p>
+          </div>
+          <div class="price">
+            <p>PRO</p>
+            <h1>39</h1>
+            <p>Feature NO 1</p>
+            <p>Extra Feature</p>
+            <p>Feature NO 2</p>
+            <p class="Future">Feature</p>
+            <p>Buy Now</p>
+          </div>
+          <div class="price">
+            <p>PLATINUM</p>
+            <h1>49</h1>
+            <p>Feature NO 1</p>
+            <p>Extra Feature</p>
+            <p>Feature NO 2</p>
+            <p class="Future">Feature</p>
+            <p>Buy Now</p>
+          </div>
+        </div>
+        <div class="contact">
+          <p>Contacct us if you have a special request</p>
+          <p>Contact us</p>
+        </div>
+      </div>
+    </div>
+    <!-- end pricing -->
+    <!-- start subscribe -->
+    <div class="Subscribe">
+      <div class="container">
+        <div class="subscribe-section">
+          <label for="email"
+            ><i class="fa-solid fa-envelope"></i>YOUR MAIL</label
+          >
+          <input type="email" name="email" />
+          <span>Subscribe</span>
+          <p>
+            i don't no what i should write but i will right anything anyway bla
+            bla bla bla i think thats ok
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end subscribe -->
+    <div class="contact">
+      <div class="container">
+        <div class="main-heading">
+          <h2>Contact Us</h2>
+          <p>
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+        <div class="content">
+          <form action="">
+            <fieldset>
+              <legend>Contact Us:</legend>
+              <input
+                class="main-input"
+                type="text"
+                name="name"
+                placeholder="Your Name"
+              />
+              <input
+                class="main-input"
+                type="email"
+                name="mail"
+                placeholder="Your Email"
+              />
+              <textarea
+                class="main-input"
+                name="message"
+                placeholder="Your Message"
+              ></textarea>
+              <input type="submit" value="Send Message" />
+            </fieldset>
+          </form>
+          <div class="info">
+            <h4>Get In Touch</h4>
+            <span class="phone">+00 123.456.789</span>
+            <span class="phone">+00 123.456.789</span>
+            <h4>Where We Are</h4>
+            <address>
+              Awesome Address 17<br />New York, NYC<br />123-4567-890<br />USA
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact -->
+    <!-- Start Footer -->
+    <div class="footer">
+      <div class="container">
+        <img src="./Recordes/Images/logo.png" alt="Logo" />
+        <p>We Are Social</p>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fas fa-home"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+        <p class="copyright">
+          &copy; 2021 <span>Kasper</span> All Right Reserved
+        </p>
+      </div>
+    </div>
+    <!-- End Footer -->
+  </body>
+</html>

@@ -1,0 +1,942 @@
+/* start variabels */
+:root{
+    --main-color:rgb(25, 202, 250);
+    --transparemt-color:rgb(15 116 143 / 70%);
+    --section-padding:100px;
+}
+/* start variabels */
+/* Start global rules*/
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth
+}
+html{
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;  
+}
+ul{
+    list-style: none;
+}
+.container{
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+@media (min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/* End global rules*/
+/* Start Components */
+.main-heading {
+    text-align: center;
+    padding:50PX 0 0 0;
+}
+.main-heading h2 {
+    font-weight: normal;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+}
+.main-heading h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: #333;
+    bottom: -30px;
+    width: 120px;
+}
+.main-heading h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    bottom: -38px;
+    background-color: white;
+}
+.main-heading p {
+    width: 550px;
+    margin: 0 auto 100px;
+    max-width: 100%;
+    line-height: 2;
+    color: #777;
+}
+/* End Components */
+/* start header */
+header{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 97px;
+}
+header .container::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #a2a2a2;
+    bottom: 0;
+    width: calc(100% - 30px);
+    left: 15px;
+}
+header .logo img{
+    height: 80px;
+}
+header .container nav{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.container nav .toggle-menu{
+    color: white;
+    font-size: 22px;
+}
+@media(min-width:768px){
+    .container nav .toggle-menu{
+        display: none;
+    }
+}
+header .container nav ul{
+    display: flex;
+}
+@media(max-width:767px){
+    header .container nav ul{
+        display: none;
+    }
+    header img .logo{
+        height: 60px;
+    }
+    header nav .toggle-menu:hover + ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width:100%;
+        top: 100%;
+        left: 0;
+        background-color: rgb(0, 0, 0 ,50%);
+    }
+    header nav ul li a{
+        padding: 15px !important;
+    }
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 40px 10px;
+    transition: 0.3s;
+    font-size: 14px;
+    display: block;
+}
+header nav ul li a.active,
+header nav ul li a:hover{
+    color: var(--main-color);
+    border-bottom: var(--main-color) 1px solid;
+    position: relative;
+    z-index: 3;
+}
+header nav .form{
+    position: relative;
+    width: 40px;
+    height: 30px;
+    border-left: white 1px solid;
+    margin-left: 30px;
+}
+header nav .form i{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+/* end header */
+/* start landing */
+.landing{
+    min-height: 100vh;
+    background-color: #1f2021;
+    background-image: url(../Recordes/Images/—Pngtree—geometry\ vectors\ abstract\ geo\ different_1345578.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.landing .overlay{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: var(--transparemt-color);
+    width: 50%;
+    height: 300px;
+}
+.landing-sentences{
+    position: relative;
+    width: 100%;
+}
+.landing .first-child{
+    color: white;
+    font-size: 22px;
+    padding: 40px 0;
+    line-height: 40px;
+    font-weight: 300;
+    position: absolute;
+    left: 40%;
+}
+.landing .last-child{
+    position: absolute;
+    left: 40%;
+    top: 900%;
+    color: white;
+}
+@media(max-width:767px){
+    .landing .overlay{
+        width: 100%;
+    }
+    .landing .first-child,
+    .landing .last-child{
+        left: 35%;
+        transform: translateX(-50%);
+    }
+    .landing .first-child{
+        padding: 20px 0;
+    }
+}
+@media(max-width:767px){
+    .fa-angle-left,
+    .fa-angle-right{
+        display: none;
+    }
+}
+.fa-angle-left{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translatey(-50%);
+    margin: 0 0 0 1px;
+}
+.fa-angle-right{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translatey(-50%);
+    margin: 0 0 0 1px;
+}
+.dots .active{
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+.landing .dots{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+.landing .dots i{
+    color: rgb(255, 255, 255 ,50%);
+    font-size: 15px;
+}
+/* end landing*/
+/* start services */
+.services {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+  }
+  @media (min-width: 768px) {
+    .services .services-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+      grid-column-gap: 40px;
+      grid-row-gap: 60px;
+    }
+  }
+  .services .srv-box {
+    display: flex;
+  }
+  .services .srv-box i {
+    margin-right: 50px;
+    font-size: 28px;
+  }
+  @media (max-width: 767px) {
+    .services .srv-box {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .services .srv-box i {
+      margin: 0 0 30px;
+    }
+  }
+  .services .srv-box h3 {
+    margin-bottom: 30px;
+    color: var(--main-color);
+  }
+  .services .srv-box p {
+    line-height: 2;
+    color: #777;
+  }
+/* end services */
+/* start design */
+.design .design-page{
+    position: relative;
+    width: 100%;
+    height: 600PX;
+    background-color: #1f2021;
+    background-image: url(../Recordes/Images/—Pngtree—geometry\ vectors\ abstract\ geo\ different_1345578.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.design .design-page .over-sentences{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 50%;
+    background-color: var(--transparemt-color);
+    transform: translateY(-50%);
+    color: white;
+    height: 300px;
+    padding: 60px 0 0 60px;
+}
+@media(max-width:767px){
+    .design .design-page .over-sentences{
+        width: 100%;
+    }
+}
+.design-page .over-sentences h2{
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+.design-page .over-sentences i{
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+.design-page .over-sentences li{
+    font-size: 15px;
+}
+/* end design */
+/* start portfolio */
+.portfolio{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.bottons{
+    display: flex;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.all{
+    background-color: var(--main-color);
+    padding: 15px;
+    color: white;
+    text-align: center;
+    width: 150px;
+    cursor: pointer;
+}
+.bottons .web,
+.bottons .print,
+.bottons .app,
+.bottons .photograpghy{
+    padding: 15px 0;
+    text-align: center;
+    width: 150px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.bottons .web:hover,
+.bottons .print:hover,
+.bottons .app:hover,
+.bottons .photograpghy:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+.portfolio .imgs-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.portfolio .imgs-container .box {
+    overflow: hidden;
+    position: relative;
+}
+.portfolio .imgs-container .box:hover .caption {
+    bottom: -1px;;
+}
+.portfolio .imgs-container .box:hover img {
+    transform: rotate(3deg) scale(1.1);
+}
+@media (min-width: 768px) {
+    .portfolio .imgs-container .box {
+        flex-basis: 50%;
+    }
+}
+@media (min-width: 1199px) {
+    .portfolio .imgs-container .box {
+        flex-basis: 25%;
+    }
+}
+.portfolio .imgs-container .box img {
+    max-width: 100%;
+    transition: 0.3s;
+}
+.portfolio .imgs-container .box .caption {
+    position: absolute;
+    left: 0;
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    transition: 0.3s;
+    bottom: -100%;
+}
+.portfolio .imgs-container .box .caption h4 {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.portfolio .imgs-container .box .caption p {
+    color: var(--main-color);
+}
+.portfolio .more {
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* end portfolio */
+/* start video */
+.video{
+    height: 600px;
+    width: 100%;
+    background-image: url(../Recordes/Images/—Pngtree—geometry\ vectors\ abstract\ geo\ different_1345578.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.video .over-video{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.video .video-lay{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    background-color: var(--transparemt-color);
+    transform: translateY(-50%);
+    color: white;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.video .video-lay h1{
+    font-weight: normal;
+    text-align: center;
+}
+@media (max-width:767px){
+    .video h1{
+        font-size: 27px;
+    }
+}
+.video-lay .seemore{
+    background-color: black;
+    padding: 10px 40px;
+}
+/* end video */
+/* start about */
+.about{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.anelyses{
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    background-image: url(../Recordes/Images/—Pngtree—geometry\ vectors\ abstract\ geo\ different_1345578.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
+}
+.anelyses .over-about{
+    display: flex;
+    width: 75%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--transparemt-color);
+    justify-content: space-around;
+    padding: 10px;
+}
+@media(max-width:767px){
+    .anelyses .over-about{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        width: 100%;
+        height: 100%;
+    }
+}
+.anelyses .box-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+/* end about */
+.skills{
+    position: relative;
+    margin: 202px 0 0 0;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.skills .sentences{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+}
+.skills .sentences h3{
+    font-weight: normal;
+}
+.skills .sentences p{
+    color: #777;
+    line-height: 2;
+    font-size: 13px;
+    margin-bottom: 75px;
+}
+.skills .parent-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media(max-width:1023px){
+    .skills .parent-box{
+        display: block;
+    }
+    .skills .sentences{
+        display: block;
+    }
+}
+.skills .child-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 34%;
+    height: auto;
+}
+.skills .child-box .pp1,
+.skills .child-box .pp2{
+    padding-bottom: 30px;
+    border-bottom: #777 2px solid;
+    margin-bottom: 60px;
+    position: relative;
+    line-height: 1.8;
+}
+.skills .child-box .pp1::after{
+    content: 'bla bla';
+    color: #777;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+}
+.skills .child-box .pp2::after{
+    content: 'bla bla';
+    color: #777;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+}
+.skills .child-box .dots{
+    margin: auto;
+    font-size: 12px;
+    padding-bottom: 40px;
+}
+.skills .adobe,
+.skills .html, 
+.skills .javascript,
+.skills .php{
+    height: 30px;
+    width: 100%;
+    background: #b9b9b9;
+    margin: 5px 0 20px 0;
+    position: relative;
+    z-index: -1;
+}
+.skills .adobe1,
+.skills .html1,
+.skills .java1,
+.skills .php1{
+    height: 30px;
+    width: 85%;
+    background-color: var(--main-color);
+    z-index: 10;
+    position: relative;
+}
+.skills .html1{
+width: 83%;
+}
+.skills .java1{
+    width: 75%;
+}
+.skills .php1{
+    width: 77%;
+}
+.skills .adobe1::after,
+.skills .html1::after,
+.skills .java1::after,
+.skills .php1::after{
+    content: '85%';
+    position: absolute;
+    top: -20px;
+    color: white;
+    background-color: black;
+    border-radius: 10%;
+    right: -18px;
+    z-index: 20;
+    font-size: 15px;
+}
+/* end skills */
+/* start qoute */
+.qoute{
+    height: 300px;
+    position: relative;
+    background-image: url(../Recordes/Images/—Pngtree—geometry\ vectors\ abstract\ geo\ different_1345578.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: var(--section-padding);
+    padding-bottom:var(--section-padding) ;
+}
+@media(max-width:767px){
+    .qoute {
+        padding: 0;
+    }
+    .qoute .senten{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.qoute .senten{
+    color: white;
+    text-align: center;
+}
+.qoute .senten h1{
+    font-weight: normal;
+}
+/* end qoute */
+/* strat price */
+.pricing{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.pricing .price-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+.pricing .price-box .price{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+    align-items: center;
+    padding: 30px 0 30px;
+    margin: 0px 0 300px;
+    position: relative;
+}
+@media(max-width:767px){
+    .pricing .price-box{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.price-box .price :first-child{
+    border: none;
+    padding: 0;
+}
+.price-box .price h1::before{
+    content: "$";
+    position: absolute;
+    font-size: 20px;
+    font-weight: normal;
+    left: 55px;
+}
+.price-box .price h1::after{
+    content: '.99';
+    position: absolute;
+    font-size: 20px;
+    font-weight: normal;
+    bottom: 28px;
+}
+.price-box .price .Future{
+    border: none;
+    padding-bottom: 0;
+}
+.price-box .price h1{
+    border-bottom: 1px solid var(--main-color);
+    padding: 5px 75px 20px;
+    font-weight: normal;
+    font-size: 50px;
+    margin: 0;
+    position: relative;
+}
+.price-box .price p{
+    border-bottom: 1px solid var(--main-color);
+    padding: 20px 15px;
+
+}
+.price-box .price :last-child{
+    position: absolute;
+    padding: 10px 25px;
+    bottom: -300px;
+    border: 1px solid var(--main-color);
+}
+.price-box :last-child{
+    margin-bottom: 200px;
+}
+.pricing .contact p{
+    text-align: center;
+}
+.pricing .contact :last-child{
+    background-color: var(--main-color);
+    padding: 15px;
+    color: white;
+    width: 135px;
+    margin: 20px auto 0;
+}
+/* end price */
+/* start subscribe */
+.Subscribe{
+    position: relative;
+    height: 200px;
+    background-image: url(../Recordes/Images/—Pngtree—geometry\ vectors\ abstract\ geo\ different_1345578.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.Subscribe .subscribe-section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    width: 75%;
+}
+.Subscribe .subscribe-section input{
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    width: 45%;
+    height: 50px;
+    color: white;
+    position: relative;
+}
+.Subscribe .subscribe-section input :hover .Subscribe .subscribe-section label{
+    display: none;
+}
+.Subscribe .subscribe-section label{
+    top: 50%;
+    transform: translateY(-50%);
+    POSITION: absolute;
+    left: 20px;
+    transition: all 0.3;
+}
+.Subscribe .subscribe-section label i{
+    margin-right: 20px;
+}
+.Subscribe .subscribe-section span{
+    margin-right: 30px;
+    width: 120px;
+    outline: none;
+    background-color: var(--main-color);
+    color: white;
+    height: 50px;
+    padding: 16px 13px;
+}
+.Subscribe .subscribe-section p{
+    font-size: 13px;
+    width: 40%;
+}
+@media(max-width:767px){
+    .Subscribe .subscribe-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Subscribe .subscribe-section input{
+        width: 100%;
+    }
+    .Subscribe .subscribe-section label{
+        text-align: center;
+        top: 25px;
+    }
+    .Subscribe .subscribe-section span{
+        margin: 20px 0;
+    }
+    .Subscribe .subscribe-section p{
+        width: 100%;
+    }
+}
+/* end subscribe */
+/* Start Contact */
+.contact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.contact .content {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 767px) {
+    .contact .content {
+    flex-direction: column;
+    }
+}
+.contact .content form {
+    flex-basis: 70%;
+}
+.contact .content form .main-input {
+    padding: 20px;
+    display: block;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.contact .content form .main-input:focus {
+    outline: none;
+}
+.contact .content form textarea.main-input {
+    height: 200px;
+}
+.contact .content form input[type="submit"] {
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    border: none;
+    display: flex;
+    margin-left: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.contact .content .info {
+    flex-basis: 25%;
+}
+@media (max-width: 767px) {
+    .contact .content .info {
+    order: -1;
+    text-align: center;
+    }
+}
+.contact .content .info h4 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.contact .content .info .phone {
+    display: block;
+    color: #777;
+    margin-bottom: 10px;
+}
+.contact .content .info h4:nth-of-type(2) {
+    margin-top: 90px;
+}
+@media (max-width: 767px) {
+    .contact .content .info h4:nth-of-type(2) {
+    margin-top: 30px;
+    }
+}
+.contact .content .info address {
+    color: #777;
+    line-height: 2;
+}
+@media (max-width: 767px) {
+    .contact .content .info address {
+    margin-bottom: 40px;
+    }
+}
+  /* End Contact */
+  /* Start Footer */
+.footer {
+    padding-top: calc(var(--section-padding) / 2);
+    padding-bottom: calc(var(--section-padding) / 2);
+    background-image: url("../Recordes/Images/—Pngtree—geometry\ vectors\ abstract\ geo\ different_1345578.png");
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+.footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.footer .container {
+    position: relative;
+}
+.footer img {   
+    margin-bottom: 20px;
+}
+.footer p:not(.copyright) {
+    text-transform: uppercase;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    font-size: 22px;
+    width: fit-content;
+    margin: 20px auto;
+}
+.footer .social-icons i {
+    padding: 10px 15px;
+}
+.footer .copyright {
+    margin-top: 60px;
+}
+.footer .copyright span {
+    font-weight: bold;
+    color: var(--main-color);
+}
+  /* End Footer */
